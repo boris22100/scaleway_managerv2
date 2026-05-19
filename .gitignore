@@ -1,0 +1,21 @@
+# --- Base de données locale (Sécurité & Clés API) ---
+data/
+*.db
+*.sqlite
+
+# --- Fichiers temporaires et Caches Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.python-version
+
+# --- Configuration et Environnement Streamlit ---
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# --- Fichiers système et IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.log
