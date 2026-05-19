@@ -51,7 +51,7 @@ Le projet est découpé en services distincts pour isoler les responsabilités e
 
 ### 2\. Clonage du dépôt
 
-    git clone [https://github.com/boris22100/scaleway_managerv2.git](https://github.com/boris22100/scaleway_managerv2.git)
+    git clone https://github.com/boris22100/scaleway_managerv2.git
     cd scaleway_managerv2
     
 
@@ -59,7 +59,7 @@ Le projet est découpé en services distincts pour isoler les responsabilités e
 
 Exécutez la commande suivante pour compiler et démarrer l'ensemble des modules (`scw-core`, `scw-ui`) en tâche de fond :
 
-    docker-compose up --build -d
+    docker compose up --build -d
     
 
 L'interface de gestion devient instantanément disponible sur l'adresse : ****http://localhost:8501****
