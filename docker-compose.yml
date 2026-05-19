@@ -1,0 +1,22 @@
+services:
+  scw-core:
+    build:
+      context: ./scw-core
+      dockerfile: Dockerfile
+    container_name: scw-core
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
+  scw-ui:
+    build: ./scw-ui
+    container_name: scw-ui
+    ports:
+      - "8501:8501"
+    environment:
+      - CORE_URL=http://scw-core:8080
+    depends_on:
+      - scw-core
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
