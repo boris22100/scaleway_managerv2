@@ -11,6 +11,7 @@ Le projet est découpé en services distincts pour isoler les responsabilités e
     ├── scw-ui/             # Interface réactive développée avec Streamlit
     ├── data/               # Volume persistant pour la base de données SQLite (manager.db)
     └── docker-compose.yml  # Orchestration et liaison des conteneurs applicatifs
+    └── Dockerfile
 
 ## 🛠 Spécifications Techniques
 
