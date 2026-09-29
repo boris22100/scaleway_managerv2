@@ -9,10 +9,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
+# Copie depuis le sous-dossier scw-ui
+COPY scw-ui/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY app.py .
+COPY scw-ui/app.py .
 
 EXPOSE 8501
 
